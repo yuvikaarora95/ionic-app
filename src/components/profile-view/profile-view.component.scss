@@ -1,0 +1,19 @@
+
+app-profile-view{
+    .profile-view_image-container{
+        background: linear-gradient(#42275a, #734b6d );
+        height :220px;
+    }
+    .profile-view__image {
+        height: 230px;
+        max-height: 230px;
+        padding-bottom: 10px;
+    }
+
+    .label-ios{
+        text-shadow: 1px 1px 1px maroon;
+
+    }
+    
+
+}

@@ -1,0 +1,58 @@
+<!--Generated template for the LoginFormComponent component-->
+<form #loginForm= "ngForm" novalidate>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>Email Address</ion-label>
+        <ion-input 
+        [(ngModel)] = "account.email" 
+        type="email"  name="email" #email="ngModel"> </ion-input>
+      </ion-item>
+      <!-- <div padding *ngIf="email.invalid && email.dirty">
+        <span> Email address is not valid.</span>
+      </div> --> 
+
+<!-------------------------------------------------------------------------->
+
+<ion-item>
+  <ion-label floating>Password</ion-label>
+  <ion-input 
+  [(ngModel)] = "account.password" 
+  type="password"  name="password" #email="ngModel">
+
+</ion-input>
+</ion-item>
+
+<!-- <div padding *ngIf="password.invalid " >
+  <span class="global__input-error"> Password must be at least 6 character and have one uppercase letter.</span>
+</div> -->
+
+<!-------------------------------------------------------------------------->
+</ion-card-content>
+
+
+    <ion-row class="login-form__buttons"> 
+      <div>
+      <button ion-button (click)="navigateToRegisterPage()" color="secondary">Register</button>
+    <!-- <button ion-button (click)="navigateToPage('TabsPage')">Login</button> -->
+    <button ion-button (click)="login($event)">Login</button>
+ <!-- <button ion-button (click)="login()" [disabled]="loginForm.invalid">Login</button> -->
+    </div>
+    </ion-row>
+
+  </ion-card>
+  </form> 
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
